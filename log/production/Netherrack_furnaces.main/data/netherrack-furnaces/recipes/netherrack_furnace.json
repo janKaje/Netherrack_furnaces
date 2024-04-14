@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " R ",
+    "WWW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:netherrack"
+    },
+    "R": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "netherrack-furnaces:netherrack_furnace",
+    "count": 1
+  }
+}

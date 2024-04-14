@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "netherrack-furnaces",
+	"version": "${version}",
+	"name": "Netherrack Furnaces",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/netherrack-furnaces/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mod.netherrackfurnace.NetherrackFurnaces"
+		],
+		"client": [
+			"mod.netherrackfurnace.NetherrackFurnacesClient"
+		]
+	},
+	"mixins": [
+		"netherrack-furnaces.mixins.json",
+		{
+			"config": "netherrack-furnaces.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
